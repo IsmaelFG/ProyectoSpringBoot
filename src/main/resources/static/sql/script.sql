@@ -1,0 +1,12 @@
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL,
+    clave VARCHAR(255) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    apellido1 VARCHAR(100) NOT NULL,
+    apellido2 VARCHAR(100),
+    edad INT,
+    direccion VARCHAR(255),
+    fecha_alta DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    fecha_baja DATETIME DEFAULT NULL
+);
